@@ -1,7 +1,7 @@
 ---
 name: linqcheck-geo-skill
 description: Perform evidence-based, read-only GEO and AI commerce readiness audits of public e-commerce websites and product pages. Use for SEO/GEO discoverability, product data consistency, structured data, crawler access and Turkish or English commerce audits.
-license: LinqCheck Community License (draft; see LICENSE)
+license: LinqCheck Community License 1.0 (see LICENSE)
 compatibility: Requires public web retrieval for live audits; raw HTTP and rendered browser access are optional. Offline audits can use user-provided snapshots.
 metadata:
   author: TalyNext

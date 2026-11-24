@@ -4,7 +4,7 @@
 
 [ Türkçe README ](README.tr.md) · [Methodology](references/methodology.md) · [Checklist](references/checklist.md) · [Example](examples/sample-audit.md) · [Tests](TESTS.md)
 
-Version **0.1.1 — experimental public beta (release candidate; license review pending)**. Maintained by TalyNext.
+Version **0.1.1 — experimental public beta**. Maintained by TalyNext.
 
 ## What it does
 
@@ -33,4 +33,4 @@ TalyNext also develops [LinqCheck](https://linqcheck.com), an optional commercia
 
 ## Contributing and license
 
-Report reproducible issues with sanitized evidence, tool capabilities and skill version; omit personal data and credentials. See [LICENSE](LICENSE) (LinqCheck Community License — draft). Free personal, educational, research and internal business use is intended; paid client services, external commercial integrations, resale and public redistribution require separate written permission, subject to the license and applicable law. Commercial enquiries: [LinqCheck](https://linqcheck.com). This is not an OSI-approved open-source project. Do not publish this candidate before legal review and approval.
+Report reproducible issues with sanitized evidence, tool capabilities and skill version; omit personal data and credentials. See [LICENSE](LICENSE) (LinqCheck Community License — Version 1.0). Personal, educational, research and internal business use are permitted free of charge; business-related third-party audits and consulting (including free promotional audits), external commercial integrations, resale and public redistribution require separate written permission, subject to the license, GitHub Terms of Service and applicable law. Commercial enquiries: [LinqCheck](https://linqcheck.com). This is not an OSI-approved open-source project.

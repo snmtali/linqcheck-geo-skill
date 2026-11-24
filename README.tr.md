@@ -4,7 +4,7 @@
 
 [English README](README.md) · [Metodoloji](references/methodology.md) · [Kontrol listesi](references/checklist.md) · [Örnek](examples/sample-audit.md) · [Testler](TESTS.md)
 
-Sürüm **0.1.1 — deneysel herkese açık beta (yayın adayı; lisans incelemesi bekleniyor)**. TalyNext tarafından geliştirilir.
+Sürüm **0.1.1 — deneysel herkese açık beta**. TalyNext tarafından geliştirilir.
 
 ## Ne yapar?
 
@@ -26,4 +26,4 @@ Depoyu `linqcheck-geo-skill` adlı klasöre indirin veya klonlayın. Uyumlu Agen
 
 TalyNext aynı zamanda [LinqCheck](https://linqcheck.com) ticari ürününü geliştirir. Skill kullanımı için üyelik, ödeme veya zorunlu LinqCheck çağrısı gerekmez. Kullanılan istemci ve araçların kendi veri işleme koşulları geçerlidir. Skill telemetri kodu içermez.
 
-Hata bildirimlerinde kişisel bilgileri ve kimlik bilgilerini paylaşmayın. Lisans: [LinqCheck Community License — taslak](LICENSE). Bireysel kullanım, eğitim, araştırma ve şirketin kendi iç ticari operasyonları için ücretsiz kullanım öngörülür. Ücretli müşteri hizmetleri, üçüncü taraflara sunulan ticari entegrasyonlar, yeniden satış ve herkese açık yeniden dağıtım için lisans ve uygulanabilir hukuk kapsamında ayrı yazılı izin gerekir. Ticari izin talepleri: [LinqCheck](https://linqcheck.com). Kaynak erişilebilir (source-available); OSI onaylı açık kaynak değildir. İngilizce lisans metni esas alınmak üzere hazırlanmıştır. Hukuki inceleme ve nihai onaydan önce yayımlamayın.
+Hata bildirimlerinde kişisel bilgileri ve kimlik bilgilerini paylaşmayın. Lisans: [LinqCheck Community License — Version 1.0](LICENSE). Bireysel kullanım, eğitim, araştırma ve şirketin kendi iç ticari operasyonları için ücretsiz kullanıma izin verilir. Ticari faaliyet kapsamında üçüncü taraflara sunulan analiz ve danışmanlık (ücretsiz tanıtım analizleri dahil), üçüncü taraflara sunulan ticari entegrasyonlar, yeniden satış ve herkese açık yeniden dağıtım için lisans, GitHub kullanım koşulları ve uygulanabilir hukuk çerçevesinde ayrı yazılı izin gerekir. Ticari izin talepleri: [LinqCheck](https://linqcheck.com). Kaynak erişilebilir (source-available); OSI onaylı açık kaynak değildir. İngilizce lisans metni esastır.
