@@ -14,6 +14,12 @@ Genel GEO puanı, görünürlük garantisi, otomatik site değişikliği veya sa
 
 ## Kurulum
 
+[![GEO Skill İndir](https://img.shields.io/badge/Ücretsiz%20İndir-GEO%20Skill%20v0.1.1-00897B?style=for-the-badge)](https://github.com/snmtali/linqcheck-geo-skill/releases/download/v0.1.1/linqcheck-geo-skill-v0.1.1-community.zip)
+
+**Bireysel ve şirket içi kullanım için ücretsiz.**
+
+[Sürüm notlarını inceleyin](https://github.com/snmtali/linqcheck-geo-skill/releases/tag/v0.1.1)
+
 Depoyu `linqcheck-geo-skill` adlı klasöre indirin veya klonlayın. Uyumlu Agent Skills istemcinizin kurulum yöntemini kullanın. Claude Code için proje içinde `.claude/skills/linqcheck-geo-skill/` veya kişisel kullanımda `~/.claude/skills/linqcheck-geo-skill/` klasörüne yerleştirin. ZIP kabul eden istemcilerde ilgili kurulum talimatını izleyin.
 
 Örnek: “LinqCheck GEO Skill kullanarak https://example.com/product adresini GEO ve AI Commerce hazırlığı açısından analiz et. Kanıtları, kapsamı ve öncelikli aksiyonları göster. Salt okunur çalış.”
