@@ -16,6 +16,12 @@ Version **0.1.1 — experimental public beta**. Maintained by TalyNext.
 No overall GEO score, ranking promises, automatic site edits or purchases. The skill is a set of agent instructions, not a crawler or standalone application. Results depend on the host model, available tools and source access.
 
 ## Install and use
+[![Download GEO Skill](https://img.shields.io/badge/Download-GEO%20Skill%20v0.1.1-00897B?style=for-the-badge)](https://github.com/snmtali/linqcheck-geo-skill/releases/download/v0.1.1/linqcheck-geo-skill-v0.1.1-community.zip)
+
+**Free for personal and internal business use.**
+
+[View release notes](https://github.com/snmtali/linqcheck-geo-skill/releases/tag/v0.1.1)
+
 
 Download or clone this repository into a folder named `linqcheck-geo-skill`. Install that folder using your compatible Agent Skills client's workflow. For Claude Code, use `.claude/skills/linqcheck-geo-skill/` inside a project or `~/.claude/skills/linqcheck-geo-skill/` for personal use. Other clients may accept a ZIP of the skill folder; consult their installation instructions. Web access is supplied by the host, not this skill.
 
