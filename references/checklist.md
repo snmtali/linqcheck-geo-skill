@@ -1,10 +1,10 @@
-# Checklist v0.1.2
+# Checklist v0.1.3
 Apply checks individually. Read guardrails.md for scope, aggregation and evidence rules. If the required source or tool is unavailable, return UNKNOWN / NOT VERIFIED. For absence claims, define the inspected scope. Do not treat optional fields as mandatory universally.
 
 | ID | Check / criterion | Evidence required |
 |---|---|---|
 | A01 | Public page responds successfully; record redirects and status | Actual HTTP response or explicitly supplied response record (scope and provenance stated) |
-| A02 | Applicable robots.txt rules permit intended crawler and path, where desired by owner | robots.txt and current official crawler documentation; distinguish search and training bots |
+| A02 | Applicable robots.txt rules permit intended crawler and path, where desired by owner | authorized robots.txt evidence and available verified crawler semantics; distinguish search and training bots; do not automatically fetch external documentation; UNKNOWN when current semantics cannot be established |
 | A03 | Index directives consistent with intended public discovery | Raw meta robots and HTTP X-Robots-Tag where available |
 | A04 | Canonical points to intended equivalent URL | Raw/rendered canonical and target context |
 | A05 | Product URL listed in relevant sitemap if sitemap discovery is intended | Relevant sitemap fetched and inspected; partial sample cannot prove omission |

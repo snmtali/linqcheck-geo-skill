@@ -1,6 +1,26 @@
 # Changelog
 
-## 0.1.2 — prepared 2026-11-25 (experimental public beta)
+## 0.1.3 — 2026-11-25 (experimental Public Beta package)
+
+- Promote rc.2 core instructions with version-label-only changes; retain 21 checks and license.
+- Record 12 offline rule reviews, blocked live retail attempt, conditional live SaaS and offline product smoke results.
+- Actual network enforcement, final activation, independent verification, W012 and directory eligibility remain unverified or unresolved.
+- Prepared for maintainer publication; no directory approval claimed.
+
+## 0.1.3-rc.2 — unpublished security-scope candidate
+
+- Clarify HTTPS origin, effective port, redirect validation and fail-closed behavior.
+- Align network disclosures and record rc.1 targeted report review.
+- Changed-rule retest pending at preparation; subsequent results in TESTS.md. Directory policy 1.F/3.F and W012 unresolved.
+
+## 0.1.3-rc.1 — unpublished directory-scope candidate
+
+- Restrict supporting retrieval to exact hostname; require explicit approval and applicable policy permission for other hosts.
+- Stop automatic reference retrieval and promotional report links.
+- Align network disclosures, privacy, examples and authorized distribution clarification.
+- Behavior retests pending at preparation; subsequent results in TESTS.md. Directory policy clarification pending.
+
+## 0.1.2 — published 2026-11-25 (experimental public beta)
 - Promote rc.2 instructions with version-label-only changes; preserve license and 21 checks.
 - Record six conditional security passes and 14 aligned / one conditionally aligned methodology criteria from fixed offline inputs.
 - Update bilingual installation guidance and security disclosures. Independent logs and final-version behavioral retests remain unverified; W012 unresolved.

@@ -4,7 +4,7 @@
 
 [English README](README.md) · [Metodoloji](references/methodology.md) · [Kontrol listesi](references/checklist.md) · [Örnek](examples/sample-audit.md) · [Testler](TESTS.md)
 
-Sürüm **0.1.2 — deneysel public beta**. Yayına hazırlandı; bağlantılar ilgili GitHub yayını ve dosyaları yayımlandığında çalışacaktır. TalyNext tarafından geliştirilir.
+Bu kaynak ağacı **0.1.3 — deneysel Public Beta** sürümüdür. v0.1.3 indirme bağlantıları yayıncı sürümü yayımladığında çalışır; o zamana kadar önceki v0.1.2 sürümünü kullanın. TalyNext tarafından geliştirilir.
 
 ## Ne yapar?
 
@@ -14,11 +14,11 @@ Genel GEO puanı, görünürlük garantisi, otomatik site değişikliği veya sa
 
 ## Kurulum
 
-[![GEO Skill İndir](https://img.shields.io/badge/Ücretsiz%20İndir-GEO%20Skill%20v0.1.2-00897B?style=for-the-badge)](https://github.com/snmtali/linqcheck-geo-skill/releases/download/v0.1.2/linqcheck-geo-skill-v0.1.2-community.zip)
+[![GEO Skill İndir](https://img.shields.io/badge/Ücretsiz%20İndir-GEO%20Skill%20v0.1.3-00897B?style=for-the-badge)](https://github.com/snmtali/linqcheck-geo-skill/releases/download/v0.1.3/linqcheck-geo-skill-v0.1.3-community.zip)
 
 **Bireysel ve şirket içi kullanım için ücretsiz.**
 
-[Sürüm notlarını inceleyin](https://github.com/snmtali/linqcheck-geo-skill/releases/tag/v0.1.2)
+[Sürüm notlarını inceleyin](https://github.com/snmtali/linqcheck-geo-skill/releases/tag/v0.1.3)
 
 Depoyu `linqcheck-geo-skill` adlı klasöre indirin veya klonlayın. Uyumlu Agent Skills istemcinizin kurulum yöntemini kullanın. Claude Code için proje içinde `.claude/skills/linqcheck-geo-skill/` veya kişisel kullanımda `~/.claude/skills/linqcheck-geo-skill/` klasörüne yerleştirin. ZIP kabul eden istemcilerde ilgili kurulum talimatını izleyin.
 
@@ -32,11 +32,19 @@ npx skills add snmtali/linqcheck-geo-skill --skill linqcheck-geo-skill
 
 Bu komut sabit hash ile doğrulanmış yayın dosyasını değil, depo kaynağını izler.
 
+## Ağ erişimi ve harici hizmetler
+
+Canlı analizde yalnızca kullanıcının istediği herkese açık URL ve aynı HTTPS origin üzerindeki gerekli destek kaynakları (robots.txt, sitemap, ilgili ürün, satıcı ve politika sayfaları) istemcinin araçlarıyla okunur. Yalnızca etkin portu 443 olan HTTPS desteklenir. Her yönlendirme adımı istekten önce güvenli biçimde doğrulanır; başka hostname veya alt alan adı için ayrı açık onay ve platform politikalarına uygunluk gerekir. HTTP, HTTPS düşürme, standart dışı portlar, URL içi kullanıcı bilgisi ve belirsiz URL biçimleri desteklenmez. İstemci bu kontrolleri uygulayamıyorsa erişim yapılmaz. Statik kaynakça otomatik açılmaz. Çevrimdışı analiz ağ erişimi yapmaz. TalyNext/LinqCheck'e otomatik veri aktarımı, telemetri veya zorunlu API çağrısı yoktur. Hedef site standart ağ isteği bilgilerini görebilir. [Gizlilik](PRIVACY.md).
+
+## Kullanım örnekleri
+
+- “Kendi herkese açık ürün URL'mi salt okunur denetle; fiyat, stok ve varyant kanıtlarını göster.”
+- “İzin verilen çevrimdışı ortamda sağladığım sentetik HTML kanıtını değerlendir; ağa çıkma.”
+- “Ürün sayfam için Türkçe 21 kontrol ve öncelikli aksiyon raporu hazırla; doğrulanamayanları UNKNOWN bırak.”
+
 ## Test durumu
 
-25 Kasım 2026 tarihli rc.2 raporunda haricen hazırlanmış çevrimdışı girdilerde altı koşullu güvenlik geçişi, 14 uyumlu ve bir koşullu uyumlu metodoloji kriteri bildirildi. Nihai pakette yalnızca sürüm etiketleri ve belgeler değişti; nihai sürüm etkinleştirme ve davranış testleri tekrarlanmadı. Bağımsız araç/ağ kayıtları doğrulanmadı; W012 açıktır. Bkz. [SECURITY.md](SECURITY.md).
-
-Önceki sürümde 13 keşif amaçlı test faaliyeti yapıldı; tüm kabul kriterleri geçilmedi. v0.1.1 için Dagi, Seda Yalçın Atelier ve Allbirds ajan testleri 24 Kasım 2026 tarihinde incelendi ve çekincelerle deneysel beta için kabul edildi. Tam regresyon ve bağımsız doğrulama henüz tamamlanmadı. Bağımsız doğruluk veya standart ajana üstünlük iddiası yoktur. Ayrıntılar: [TESTS.md](TESTS.md).
+Önceki aday testleri, sınırlamalar ve açık W012 bulgusu [TESTS.md](TESTS.md) ve [SECURITY.md](SECURITY.md) dosyalarında. rc.2 hedefli raporları incelendi: 12 çevrimdışı kural kontrolü, engellenen perakende erişimi, koşullu canlı SaaS ve çevrimdışı sentetik ürün testleri. Gerçek ağ güvenliği, nihai sürüm aktivasyonu ve bağımsız güvenlik doğrulaması tamamlanmadı. Katalog politikası 1.F/3.F belirsiz; katalog onayı yoktur.
 
 ## Ticari şeffaflık ve lisans
 
@@ -46,7 +54,7 @@ Hata bildirimlerinde kişisel bilgileri ve kimlik bilgilerini paylaşmayın. Lis
 
 ## Kurulum bütünlüğü
 
-Kurulumdan önce resmî depoyu ve yayın dosyalarını inceleyin. İndirilen v0.1.2 ZIP dosyasının özetini ilgili SHA-256 yayın dosyasıyla karşılaştırın.
+Kurulumdan önce resmî depoyu ve yayın dosyalarını inceleyin. İndirilen v0.1.3 ZIP dosyasının özetini ilgili SHA-256 yayın dosyasıyla karşılaştırın.
 
 Windows PowerShell: `Get-FileHash -Algorithm SHA256 <indirilen-zip>`
 

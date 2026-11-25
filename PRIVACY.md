@@ -26,7 +26,7 @@ Depending on the user's request and the capabilities of the host environment, an
 
 The skill does not require a LinqCheck account, API key, payment information or personal credentials.
 
-Users should not provide confidential information, personal data or private website content for analysis.
+Public pages may incidentally contain seller names, business contact details or reviewer identifiers. The skill is designed to minimize reading and reproduction of such information and avoid retaining it. Users should not provide confidential information, personal data or private website content for analysis.
 
 ## 3. Data Collection and Storage
 
@@ -40,7 +40,7 @@ TalyNext does not control the host platform's data processing or retention pract
 
 ## 4. External Access
 
-Live audits may use the host platform's available tools to retrieve public website content requested by the user.
+Live audits may use the host platform's available tools to retrieve the public URL requested by the user and necessary supporting resources on the same HTTPS origin (effective port 443). Each redirect hop requires pre-request safety validation; other hostnames require separate explicit approval and must be permitted by host and distribution policies. HTTP, downgrades, non-default ports, userinfo and ambiguous URLs are unsupported; retrieval is skipped when the host cannot enforce these checks. Static reference links are not automatically retrieved. Offline analysis does not authorize network access.
 
 Such requests may expose standard network request information to the requested website or its infrastructure.
 
@@ -50,7 +50,7 @@ These safeguards are instruction-based and do not constitute an independent tech
 
 ## 5. Optional LinqCheck Services
 
-The skill may provide an optional informational link to https://linqcheck.com.
+The publisher website https://linqcheck.com is listed in project documentation and listing metadata. The skill does not automatically append promotional links to audit reports.
 
 Visiting or using the LinqCheck web platform is not required to use the standalone skill.
 

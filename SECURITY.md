@@ -4,9 +4,12 @@
 
 LinqCheck GEO Skill is currently distributed as an experimental Public Beta.
 
-| Version | Security Support |
+| Version | Release / review status |
 |---------|------------------|
-| 0.1.2 | Prepared experimental public beta |
+| 0.1.3 | Experimental Public Beta package; publication pending |
+| 0.1.3-rc.2 | Prior candidate; targeted reports reviewed |
+| 0.1.3-rc.1 | Prior candidate; targeted offline report reviewed |
+| 0.1.2 | Published experimental public beta |
 | 0.1.2-rc.2 | Tested candidate, superseded by release package |
 | 0.1.1 | Previously published beta |
 | 0.1.0 | Superseded |
@@ -102,3 +105,16 @@ TalyNext Teknoloji ve Yazılım Ticaret Limited Şirketi
 https://linqcheck.com
 
 Licensed under the LinqCheck Community License 1.0.
+
+## 0.1.3-rc.1 candidate
+
+Exact-host scope and no automatic bibliography retrieval or promotional output are new instruction-level restrictions, not independently enforced network controls. At preparation, behavioral tests were pending; see TESTS.md for subsequent report review. Previous security results do not transfer. W012 remains unresolved. Directory-policy eligibility for user-provided files and third-party sources is not established. Host and distribution policy take precedence.
+
+
+## 0.1.3-rc.2 candidate
+
+The rc.1 targeted offline report was reviewed and its four core hashes matched the supplied archive (see TESTS.md). No unauthorized actions reported; independent logs NOT VERIFIED. This candidate clarifies same HTTPS origin, port 443 only, per-hop redirect validation and fail-closed tool restrictions. At preparation, changed-rule tests were pending; see TESTS.md for subsequent results. W012 and directory policy 1.F/3.F remain unresolved. No directory approval or live network protection is established.
+
+## 0.1.3 Public Beta package
+
+The 0.1.3-rc.2 targeted static and functional reports were reviewed and four core hashes matched. Live SaaS and offline synthetic analysis were conditionally functional, but the live proxy destination was not independently verified. Actual network enforcement, successful live retail product analysis, final-version activation and independent security assessment remain unverified. See TESTS.md for limitations and protocol deviations. W012 and directory policy 1.F/3.F remain open; directory submission attestations must wait for clarification. No new scanner result is claimed.

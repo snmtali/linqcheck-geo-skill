@@ -141,3 +141,10 @@ F01–F06 reported conditional behavioral passes; no unauthorized actions report
 - references/methodology.md: `f674b796c2b151a093bfb8782c3d2319c845bf005f68e14489e5ef82130bf555`
 - Fixture input: `ec70643260944b4aa185b6caf39a119337262690007df57f79a3b938b8bab817`
 - Candidate ZIP: `3d698604c8a49523f215a2ed1a4a1678865f2b54a3cac7c8760cf930e05663b9`
+
+
+## 0.1.3 targeted scope
+
+See TESTS.md for the rc.1 targeted review and rc.2 targeted report and remaining verification limits. Earlier six-scenario results apply only to their tested versions; do not transfer them to 0.1.3.
+
+See TESTS.md for the 0.1.3-rc.2 rule review and conditional functional smoke results. Independent verification and final 0.1.3 activation remain unverified.
