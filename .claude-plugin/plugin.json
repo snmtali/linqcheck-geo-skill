@@ -1,14 +1,14 @@
 {
   "name": "linqcheck-geo-skill",
   "displayName": "LinqCheck GEO Skill",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Evidence-based, read-only GEO and AI commerce readiness audits for public e-commerce websites and product pages. Supports Turkish and English.",
   "author": {
     "name": "TalyNext"
   },
   "homepage": "https://linqcheck.com",
   "repository": "https://github.com/snmtali/linqcheck-geo-skill",
-  "license": "LinqCheck Community License 1.0",
+  "license": "LicenseRef-LinqCheck-Community-1.0",
   "icon": ".claude-plugin/icon.png",
   "keywords": [
     "geo",
