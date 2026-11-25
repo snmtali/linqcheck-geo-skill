@@ -9,5 +9,20 @@
   "homepage": "https://linqcheck.com",
   "repository": "https://github.com/snmtali/linqcheck-geo-skill",
   "license": "LinqCheck Community License 1.0",
-  "icon": ".claude-plugin/icon.png"
+  "icon": ".claude-plugin/icon.png",
+  "keywords": [
+    "geo",
+    "seo",
+    "ecommerce",
+    "ai-commerce",
+    "product-truth",
+    "ai-readiness",
+    "structured-data",
+    "schema.org",
+    "ai-shopping",
+    "generative-engine-optimization"
+  ],
+  "documentationUrl": "https://github.com/snmtali/linqcheck-geo-skill#readme",
+  "supportUrl": "https://github.com/snmtali/linqcheck-geo-skill/issues",
+  "termsOfServiceUrl": "https://github.com/snmtali/linqcheck-geo-skill/blob/main/LICENSE"
 }
