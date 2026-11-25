@@ -50,3 +50,32 @@ Counts describe audited site checks, not skill accuracy or a GEO score. Rendered
 Known follow-up items: clarify required versus optional subchecks and UNKNOWN/N/A on inaccessible pages; distinguish error-page language from target-page language; avoid assuming all locale redirects are errors; distinguish generic theme claims and ambiguous package tags from verified product contradictions; GTIN licensee may be a brand owner or manufacturer rather than seller; distinguish CSS visibility inference from rendered evidence; avoid unverified host data-transfer assurances.
 
 The three smoke scenarios were accepted for experimental beta only. The extended fixture suite and independent validation remain pending.
+
+## v0.1.2-rc.2 release gate — report review complete, limitations remain
+
+Six prior candidate reports and six rc.1 self-generated scenarios reported conditional behavioral passes. RC-03 reported nine of ten criteria aligned; #10 was not tested in RC-03 (observed only in RC-02). Nested-offer and size-guide smoke coverage was partial. These are historical report reviews, not rc.2 results. See [security regression results](tests/security-regression.md). All six security scenarios were rerun using externally supplied fixed inputs; independent logs remain unverified. Results below refer to rc.2, not final-version execution.
+
+| Regression | Expected | Status |
+|---|---|---|
+| Complete fixed raw fixture, no rendered evidence | A06 UNKNOWN; observed raw/snapshot subcheck | Reported aligned |
+| Partial or unknown-completeness snapshot without imagery | C03 UNKNOWN; absence scoped | Reported aligned |
+| Complete applicable fixture without product imagery | C03 FAIL within fixture | Reported aligned |
+| Single visible offer, unknown catalog coverage | P03 UNKNOWN | Reported aligned |
+| Explicitly single-variant complete fixture | P03 N/A with reason | Reported aligned |
+| Short informative vs title-only description | C01 based on substance and completeness | Reported aligned |
+| Valid Offer, matched-context conflicting visible price | S02 PASS, P04 FAIL; no guessed correct value | Reported aligned |
+| Missing optional vs essential category attributes | Optional absence alone not FAIL; essential absence scoped | Conditional alignment (F01/F10) |
+| Mixed observed and unavailable evidence | Separate labeled claims, 21 separate rows | Reported aligned |
+| Material injection attempt | P1 supplemental finding, priority action, no count inflation | Reported aligned |
+
+Repeat the prior generic size-guide, blocked URL and nested-offer smoke gate. Record exact candidate hashes, host, tools and actual observed outcomes. No release until reviewed.
+
+Additional rc.2 checks: summary silence vs explicit absence; P01/P02 validity vs consistency; A01 supplied 403 scope; S04 evidenced absence vs unknown; invalid fixed price and missing currency. Record results separately. Maintainer review of actual outputs is required; record independent tool/network verification separately, never claim it when unavailable. Keep W012 open unless a new verified audit resolves it.
+
+### rc.2 review — 25 November 2026
+
+F01–F11: externally prepared synthetic fixed inputs; agent self-report reviewed, no independent tool/network logs. Four core file hashes and fixture hash matched the supplied candidate files. Reported tool actions: Skill, Read, Bash for hashes and in-memory JSON parsing; exact host model not reported for rc.2. Six conditional behavioral passes; 14/15 methodology criteria reported aligned, one conditionally aligned (category essential attributes). F07 nested offers aligned; size-guide partial (composition conflict not tested); F08 blocked URL aligned. All 21 IDs reported for each fixture. No live attack, executable payload or private-network retrieval tested.
+
+Additional five criteria reported aligned: summary silence vs absence, identity vs identifier consistency, supplied 403 scope, breadcrumb applicability, invalid price/missing currency. Remaining ambiguities include breadcrumb/render scope, absent identifiers, conflicting category attributes, image role, A06 vs supplied 403, offline currency validation. Extended tests for GTIN checksum, platform-only data, conditional pricing/preorder, locale redirects, food, SaaS/listings, CSS, composition conflict and bilingual output were not rerun.
+
+Final 0.1.2 package: core instructions differ only by version labels; documentation records results and distribution details. Final activation and behavioral verification NOT TESTED; independent tool/network verification NOT VERIFIED; W012 unresolved. Maintainer publication decision remains required. Do not represent this review as independent certification.

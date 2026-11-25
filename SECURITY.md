@@ -6,7 +6,9 @@ LinqCheck GEO Skill is currently distributed as an experimental Public Beta.
 
 | Version | Security Support |
 |---------|------------------|
-| 0.1.1 | Supported |
+| 0.1.2 | Prepared experimental public beta |
+| 0.1.2-rc.2 | Tested candidate, superseded by release package |
+| 0.1.1 | Previously published beta |
 | 0.1.0 | Superseded |
 
 ## Security Principles
@@ -45,7 +47,7 @@ Project website:
 
 - https://linqcheck.com
 
-Users should review the Skill files before installation and verify that downloads originate from the official repository.
+Use the release checksum to compare downloaded bytes; it does not authenticate the publisher. Users should review the Skill files before installation and verify that downloads originate from the official repository.
 
 The Skill does not require executable scripts, external runtime packages, API credentials, or a LinqCheck account.
 
@@ -63,7 +65,7 @@ Reported concerns:
 - W011: Third-party content exposure and indirect prompt injection risk.
 - W012: Trust and verification concerns related to the external distribution URL.
 
-These findings are acknowledged. Automated audit results do not constitute a security certification or guarantee.
+These findings are acknowledged. Six offline behavioral reports for the security-updated prior candidate were reviewed with conditional passes; rc.1 self-generated offline scenarios also reported conditional passes; rc.2 fixed-input offline scenarios reported six conditional passes; report review and candidate hash matching were completed. Independent tool/network verification remains NOT VERIFIED. Final version activation and behavioral retests are pending. W012 remains unresolved; no new automated audit result is claimed. Automated audit results do not constitute a security certification or guarantee.
 
 ## Reporting a Vulnerability
 

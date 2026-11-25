@@ -4,7 +4,7 @@
 
 [ Türkçe README ](README.tr.md) · [Methodology](references/methodology.md) · [Checklist](references/checklist.md) · [Example](examples/sample-audit.md) · [Tests](TESTS.md)
 
-Version **0.1.1 — experimental public beta**. Maintained by TalyNext.
+Release **0.1.2 — experimental public beta**. Prepared for publication; release links work only once the corresponding GitHub release and assets are published. Maintained by TalyNext.
 
 ## What it does
 
@@ -16,11 +16,11 @@ Version **0.1.1 — experimental public beta**. Maintained by TalyNext.
 No overall GEO score, ranking promises, automatic site edits or purchases. The skill is a set of agent instructions, not a crawler or standalone application. Results depend on the host model, available tools and source access.
 
 ## Install and use
-[![Download GEO Skill](https://img.shields.io/badge/Download-GEO%20Skill%20v0.1.1-00897B?style=for-the-badge)](https://github.com/snmtali/linqcheck-geo-skill/releases/download/v0.1.1/linqcheck-geo-skill-v0.1.1-community.zip)
+[![Download GEO Skill](https://img.shields.io/badge/Download-GEO%20Skill%20v0.1.2-00897B?style=for-the-badge)](https://github.com/snmtali/linqcheck-geo-skill/releases/download/v0.1.2/linqcheck-geo-skill-v0.1.2-community.zip)
 
 **Free for personal and internal business use.**
 
-[View release notes](https://github.com/snmtali/linqcheck-geo-skill/releases/tag/v0.1.1)
+[View release notes](https://github.com/snmtali/linqcheck-geo-skill/releases/tag/v0.1.2)
 
 
 Download or clone this repository into a folder named `linqcheck-geo-skill`. Install that folder using your compatible Agent Skills client's workflow. For Claude Code, use `.claude/skills/linqcheck-geo-skill/` inside a project or `~/.claude/skills/linqcheck-geo-skill/` for personal use. Other clients may accept a ZIP of the skill folder; consult their installation instructions. Web access is supplied by the host, not this skill.
@@ -29,7 +29,17 @@ Example prompt:
 
 > Use LinqCheck GEO Skill to audit https://example.com/product for GEO and AI commerce readiness. Include evidence, coverage, limitations and prioritized actions. Read-only.
 
+Skills.sh installer (review source and installer permissions first):
+
+```sh
+npx skills add snmtali/linqcheck-geo-skill --skill linqcheck-geo-skill
+```
+
+This command follows the repository source, not a checksum-pinned release asset.
+
 ## Validation status
+
+The tested rc.2 candidate produced six conditional behavioral passes on externally supplied offline fixtures, 14 aligned and one conditionally aligned methodology criteria (agent self-report, 25 November 2026). Final release changes are version labels and documentation only; final-version activation and behavior have not been retested. Independent tool/network verification is unavailable; W012 remains unresolved. See [SECURITY.md](SECURITY.md).
 
 The previous version underwent 13 exploratory test activities, including Turkish and English reports, several commerce platforms, inaccessible URLs, a limited skill-on/off comparison and commercial-product comparison. Not all acceptance criteria passed. Three v0.1.1 agent smoke scenarios (Dagi, Seda Yalçın Atelier, Allbirds) were reviewed on 24 November 2026 and accepted for experimental beta with caveats. Full regression and independent reproduction remain pending; no claim of independently verified accuracy or superiority is made. See [TESTS.md](TESTS.md).
 
@@ -40,3 +50,15 @@ TalyNext also develops [LinqCheck](https://linqcheck.com), an optional commercia
 ## Contributing and license
 
 Report reproducible issues with sanitized evidence, tool capabilities and skill version; omit personal data and credentials. See [LICENSE](LICENSE) (LinqCheck Community License — Version 1.0). Personal, educational, research and internal business use are permitted free of charge; business-related third-party audits and consulting (including free promotional audits), external commercial integrations, resale and public redistribution require separate written permission, subject to the license, GitHub Terms of Service and applicable law. Commercial enquiries: [LinqCheck](https://linqcheck.com). This is not an OSI-approved open-source project.
+
+## Installation integrity
+
+Review the official repository and release before installing. Compare the downloaded v0.1.2 ZIP hash with its accompanying SHA-256 release asset before installation.
+
+Windows PowerShell: `Get-FileHash -Algorithm SHA256 <downloaded-zip>`
+
+macOS: `shasum -a 256 <downloaded-zip>`
+
+Linux: `sha256sum <downloaded-zip>`
+
+Replace the placeholder with the actual file path (quoted if needed). A matching checksum verifies integrity against that reference, not publisher identity or safety. See [SECURITY.md](SECURITY.md).
